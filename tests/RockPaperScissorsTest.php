@@ -47,6 +47,20 @@
             $this->assertEquals("Player 1 Wins", $result);
         }
 
+        function test_RockPaperScissors_paperVsRock()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $input1 = "paper";
+            $input2 = "rock";
+
+            //Act:
+            $result = $test_RockPaperScissors->playGame($input1, $input2);
+
+            //Assert
+            $this->assertEquals("Player 1 Wins", $result);
+        }
+
     }
 
     // Run in terminal in project folder

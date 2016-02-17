@@ -25,6 +25,12 @@
                 } else {
                     return "Player 2 Wins";
                 }
+            } elseif ($input1 == "paper") {
+                if ($input2 == "rock") {
+                    return "Player 1 Wins";
+                } else {
+                    return "Player 2 Wins";
+                }
             }
         }
 
