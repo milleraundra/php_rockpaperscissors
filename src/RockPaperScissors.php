@@ -16,6 +16,14 @@
             } elseif ($input1 == "rock") {
                 if ($input2 == "scissors") {
                     return "Player 1 Wins";
+                } else {
+                    return "Player 2 Wins";
+                }
+            } elseif ($input1 == "scissors") {
+                if ($input2 == "paper") {
+                    return "Player 1 Wins";
+                } else {
+                    return "Player 2 Wins";
                 }
             }
         }
