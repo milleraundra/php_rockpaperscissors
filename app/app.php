@@ -20,6 +20,17 @@
         return $app['twig']->render('rockpaperscissors.html.twig'); //
     });
 
+    // User Input
+    $app->get("/userInput", function() use ($app) {
+        $newGame = new RockPaperScissors;
+        $result = $newGame->playGame($_GET['player1'], $_GET['player2']);
+
+        // $change = $_GET['number'];
+        // $results = makeChange($change);
+        return $app['twig']->render('rockpaperscissors.html.twig', array('result' => $result)); //
+    });
+
+
     return $app;
 
 ?>
