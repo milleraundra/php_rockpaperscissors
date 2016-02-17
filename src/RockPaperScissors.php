@@ -13,6 +13,10 @@
         {
             if ($input1 == $input2) {
                 return "Tie";
+            } elseif ($input1 == "rock") {
+                if ($input2 == "scissors") {
+                    return "Player 1 Wins";
+                }
             }
         }
 

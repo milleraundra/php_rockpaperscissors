@@ -17,7 +17,22 @@
 
             //Assert
             $this->assertEquals("Tie", $result);
-        }  
+        }
+
+        function test_RockPaperScissors_rockVsScissors()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $input1 = "rock";
+            $input2 = "scissors";
+
+            //Act:
+            $result = $test_RockPaperScissors->playGame($input1, $input2);
+
+            //Assert
+            $this->assertEquals("Player 1 Wins", $result);
+        }
+
     }
 
     // Run in terminal in project folder
